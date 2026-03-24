@@ -1,0 +1,23 @@
+{
+  "name": "circularwarningonwatch",
+  "version": "0.0.1",
+  "description": "Bug reproduction for rolldown",
+  "type": "module",
+  "sideEffects": false,
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build:rollup": "rollup -c",
+    "build:rolldown": "rolldown -c rolldown.config.js",
+    "watch:rollup": "rollup -c --watch",
+    "watch:rolldown": "rolldown -c rolldown.config.js --watch"
+  },
+  "author": "Ben Carlson",
+  "license": "SEE LICENSE",
+  "dependencies": {},
+  "peerDependencies": {},
+  "devDependencies": {
+    "rolldown": "1.0.0-rc.11",
+    "rollup": "4.60.0"
+  }
+}
